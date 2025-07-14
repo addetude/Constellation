@@ -1,0 +1,73 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.moon-cover {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 130px;
+    background-color: black;
+}
+
+.star {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.8s, background-color 0.8s;
+}
+
+.star:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    filter: brightness(2);
+}
+
+#one {
+    left: 20vw;
+    top: 15vh;
+}
+
+#two {
+    left: 60vw;
+    top: 15vh;
+}
+
+#three {
+    left: 35vw;
+    top: 38vh;
+}
+
+#four {
+    left: 70vw;
+    top: 50vh;
+}
+
+#five {
+    left: 50vw;
+    top: 80vh;
+}
+
+#six {
+    left: 85vw;
+    top: 70vh;
+}
+
+#seven {
+    left: 10vw;
+    top: 70vh;
+}
+
+.sky {
+    background: url('./public/nightsky.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sky img {
+    height: 15vh;
+    width: 15vh;
+}
