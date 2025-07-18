@@ -1,0 +1,6 @@
+- modal
+    - array of star content
+    - function to open with 
+- animation (click v non click)
+- moon 
+    - lock until clicks is === 7

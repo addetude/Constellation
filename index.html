@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="" />
     <title>Constellation of Us</title>
-</head>
-<body>
-    <div class="sky">
-        <div class="moon-cover"></div>
-        <div class="star" data-clicked="false" id="one">
-            <img src="./public/star.png" alt="star1.png">
-        </div>
-        <div class="star" data-clicked="false" id="two">
-            <img src="./public/star.png" alt="star2.png">
-        </div>
-        <div class="star" data-clicked="false" id="three">
-            <img src="./public/star.png" alt="star3.png">
-        </div>
-        <div class="star" data-clicked="false" id="four">
-            <img src="./public/star.png" alt="star3.png">
-        </div>
-        <div class="star" data-clicked="false" id="five">
-            <img src="./public/star.png" alt="star3.png">
-        </div>
-        <div class="star" data-clicked="false" id="six">
-            <img src="./public/star.png" alt="star3.png">
-        </div>
-        <div class="star" data-clicked="false" id="seven">
-            <img src="./public/star.png" alt="star3.png">
-        </div>
+  </head>
+  <body>
+    <!-- MODAL -->
+
+    <div class="star-modal" id="star-modal">
+      <button class="closeBtn" onclick="closeModal()">X</button>
+      <div class="content">
+        <h1 id="name">Name</h1>
+        <p id="description">Description</p>
+        <span>
+          <input type="text" id="textbox" placeholder="question" />
+          <button type="submit" id="submit"></button>
+        </span>
+      </div>
+      <div class="image" id="img">
+        <img src="#" />
+      </div>
     </div>
-</body>
-<script src="index.js"></script>
+
+    <!-- SKY -->
+
+    <div class="sky" id="night-sky">
+      <div class="moon-cover"></div>
+      <div class="star" onclick="openModal(0)" data-clicked="false" id="one">
+        <img src="/public/star.png" alt="star1.png" />
+      </div>
+      <div class="star" onclick="openModal(0)" data-clicked="false" id="two">
+        <img src="/public/star.png" alt="star2.png" />
+      </div>
+      <div class="star" onclick="openModal(0)" data-clicked="false" id="three">
+        <img src="/public/star.png" alt="star.png" />
+      </div>
+      <div class="star" onclick="openModal(0)" data-clicked="false" id="four">
+        <img src="/public/star.png" alt="star.png" />
+      </div>
+      <div class="star" onclick="openModal(0)" data-clicked="false" id="five">
+        <img src="/public/star.png" alt="star.png" />
+      </div>
+      <div class="star" onclick="openModal(0)" data-clicked="false" id="six">
+        <img src="/public/star.png" alt="star.png" />
+      </div>
+      <div class="star" onclick="openModal(0)" data-clicked="false" id="seven">
+        <img src="/public/star.png" alt="star.png" />
+      </div>
+      <div class="moon">
+        <img src="/public/pixelmoon.png" alt="moon" />
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

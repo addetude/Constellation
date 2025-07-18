@@ -1,73 +1,115 @@
+/**  ALL  **/
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/**  SKY  **/
+
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.moon {
+  position: absolute;
+  left: 85vw;
+  top: 10vh;
+}
+
+.moon img {
+  height: 300px;
+  width: auto;
 }
 
 .moon-cover {
-    position: relative;
-    height: 100px;
-    width: 100px;
-    left: 130px;
-    background-color: black;
+  position: absolute;
+  height: 20vh;
+  width: 20vw;
+  left: 50px;
+  top: 0px;
+  background-color: black;
 }
 
 .star {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    transition: transform 0.8s, background-color 0.8s;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.8s, background-color 0.8s;
 }
 
-.star:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-    filter: brightness(2);
+.star:hover .moon:hover {
+  transform: scale(1.1);
+  filter: brightness(2);
+}
+
+.clicked {
+  opacity: 0.5;
 }
 
 #one {
-    left: 20vw;
-    top: 15vh;
+  left: 20vw;
+  top: 15vh;
 }
 
 #two {
-    left: 60vw;
-    top: 15vh;
+  left: 60vw;
+  top: 15vh;
 }
 
 #three {
-    left: 35vw;
-    top: 38vh;
+  left: 35vw;
+  top: 38vh;
 }
 
 #four {
-    left: 70vw;
-    top: 50vh;
+  left: 70vw;
+  top: 50vh;
 }
 
 #five {
-    left: 50vw;
-    top: 80vh;
+  left: 50vw;
+  top: 80vh;
 }
 
 #six {
-    left: 85vw;
-    top: 70vh;
+  left: 85vw;
+  top: 70vh;
 }
 
 #seven {
-    left: 10vw;
-    top: 70vh;
+  left: 10vw;
+  top: 70vh;
 }
 
 .sky {
-    background: url('./public/nightsky.jpg');
-    background-size: cover;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+  background: url("./public/nightsky.jpg");
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 .sky img {
-    height: 15vh;
-    width: 15vh;
+  height: 15vh;
+  width: 15vh;
+}
+
+/**  STAR MODAL  **/
+
+.star-modal {
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  padding: 20px 20px;
+}
+
+.content {
+  width: 50vw;
+  height: 100%;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 50px;
+  top: 50px;
 }
